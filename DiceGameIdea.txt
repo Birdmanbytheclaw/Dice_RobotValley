@@ -1,0 +1,20 @@
+Name of the Game is Valley of the Bots
+
+Every one you come across is a robot trying to fight you.
+you are also a robot
+they do not fight with fists but probability
+
+The Game Consists of
+
+one physical player robot and one nonplayer robot
+three characteristics
+        Strength- rolled on a singular d20
+        Speed- rolled on a singular d8
+        Cunning- rolled on two d20's (adding the Values together)
+
+Each round Consists of 2 initial Waves of Rolling
+one for each characteristic (the 2 d20s for cunning will count as one)(there is a reson for 2 seperate rolls)and each side
+*yes you roll for each characteristic every round*
+if physical player loses for any reason their is one more round of rolling to determine a better outcome depending on terms of loss
+There are a few ways to win but the main way is to roll higher strength AND speed
+the BEST way to win is to Max ot your cunning because if both of your cunning rolls win and neither of your others do you still win By thinking your way out of conflict
