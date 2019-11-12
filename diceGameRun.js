@@ -27,71 +27,52 @@ let cunningTwo = 20;
 function rollDie (x){
 let result;
 result = Math.round(Math.random() * x) + 1
-}
-//thisIsThePlayer
-function rollOne (strengthOne){
-let result;
-result = rollDie(strengthOne);
 return result;
 }
-function rollTwo (strengthTwo){
-    let result;
-    result = rollDie (strengthTwo);
-    return result;
-}
-function rollThree (strengthThree){
-    let result;
-    result = rollDie (strengthThree);
-    return result;
-}
+
+
+//thisIsThePlayer
+//strength roll
 
 function strengthRoll(rollOne, rollTwo, rollThree){
-    let result;
-    result = (rollOne + rollTwo + rollThree);
+    let result = (rollOne + rollTwo + rollThree);
     return result;
 }
-console.log("your strength is")
-console.log(strengthRoll(rollOne, rollTwo, rollThree));
+let oneResult = (rollDie(strengthOne));
+alert ("Strength roll One is.. " + oneResult);
+let twoResult = (rollDie(strengthTwo));
+alert ("Strength roll Two is.. " + twoResult);
+let threeResult = (rollDie(strengthThree));
+alert ("Strength roll Three is.. " + threeResult);
 
-// function speedRoll(speedOne, speedTwo){
-//     let result;
-//     result = rollDie(speedOne) + rollDie(speedTwo);
-//     return result;
-// }
-// console.log ("your speed is")
-// console.log(speedRoll(speedOne, speedTwo));
+console.log("your Strength is")
+console.log(strengthRoll(oneResult, twoResult, threeResult));
+
+//Speed roll
+function speedRoll(rollOne, rollTwo){
+    let result = (rollOne + rollTwo);
+    return result;
+}
+let fourResult = (rollDie(speedOne));
+alert ("Speed roll One is.. " + fourResult);
+let fiveResult = (rollDie(speedTwo));
+alert ("Speed roll Two is.. " + fiveResult);
 
 
-// console.log("your left and right brain scores are as follows")
-// console.log(cunningOne);
-// console.log(cunningTwo);
+console.log("your Speed is..")
+console.log(speedRoll(fourResult, fiveResult));
 
-// //thisIs98|105|114|100|13
-// function roboRoll (strengthOne, strengthTwo, strengthThree){
-//     let result;
-//     result = rollDie(strengthOne) + rollDie(strengthTwo) + rollDie(strengthThree);
-//     return result;
-// }
-// console.log ("98|105|114|100|13's strength is")
-// console.log(roboRoll(strengthOne, strengthTwo, strengthThree));
+//cunning roll
+let sixResult = (rollDie(cunningOne));
+alert ("Left Brain roll is.. " + sixResult);
+let sevenResult = (rollDie(cunningTwo));
+alert ("Right Brain roll is.. " + sevenResult);
 
-// function roboSpeed(speedOne, speedTwo){
-//     let result;
-//     result = rollDie(speedOne) + rollDie(speedTwo);
-//     return result;
-// }
-//     console.log ("(98|105|114|100|13's speed  is");
-//    console.log(roboSpeed(speedOne, speedTwo));
-    
-// function roboSmart (cunningOne, cunningTwo){
-//     let result;
-//     result = rollDie(cunningOne), rollDie(cunningTwo);
-//     return result;
-// }
 
-//    console.log("98|105|114|100|13's left and right brain scores are as follows")
-//    console.log (cunningOne);
-//    console.log (cunningTwo);
+console.log("your Left and Right Brain Scores are..")
+console.log(sixResult);
+console.log(sevenResult);
+
 
 //    if (strengthRoll < roboRoll){
 //        alert ("it is stronger")
