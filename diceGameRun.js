@@ -33,17 +33,17 @@ let count = 0;
 function runGame (){
     alert("your eyes open");
     alert("The world is far different from the last time you were awake.");
-    alert("you seem to be the only human left...");
-    alert("or are you?");
-    alert("after a few hours of walking around in the warehouse you woke up in you see yourself in a reflection");
-    alert("you too, are a robot");
-    alert("you make your way outside to find the world is filled with artificial life.");
+    alert("are you the only human left?...");
+    alert("or are you even human?");
+    alert("after a few hours of walking around you catch a glimps of your relfection. ");
+    alert("you too, seem to be a robot");
+    alert("you make your way to find the world is filled with artificial life.");
     alert("do they think they are human too?");
-    alert("you find your way to the first robot you meet");
+    alert("you find your way to a synthetic Life form");
     alert(" 'hello, My name is...' you can't seem to recall");
     alert("the new robot scans you and imediatley becomes hostile");
-    alert("it uses what you presume were hands at one point to grab your head");
-    alert("suddenly, Robot Valley");
+    alert("it uses what you presume were an appendage at one point to grab your hand");
+    alert("Everything goes Black then, suddenly, Robot Valley");
    strengthRoll();
     let oneResult = (rollDie(strengthOne));
     alert ("Strength roll One is.. " + oneResult);
@@ -148,22 +148,27 @@ if (sevenResult > thirteenResult){
     alert ("it's left Brain Destroyed your Right Brain")
 }
 if (count >= 4 && (sixResult > fourteenResult && sevenResult < thirteenResult) || (sixResult < fourteenResult && sevenResult > thirteenResult) ){
-    console.log ("You won")
-    alert ("Very Normal Win")
+    console.log ("You won");
+    alert ("Very Normal Win");
 }
 else if (count < 4 && (sixResult > fourteenResult && sevenResult < thirteenResult) || (sixResult < fourteenResult && sevenResult > thirteenResult) ){ 
-    console.log ("You Lost")
-    alert ("you Lost")
+    console.log ("You Lost");
+    alert ("you Lost");
     runGame()
 }
 else if (count === 0 || (sixResult < fourteenResult && sevenResult < thirteenResult)) {
-    console.log ("wow, you really lost")
-    alert ("Spectacular loss")
+    console.log ("wow, you really lost");
+    alert ("Spectacular loss");
     runGame()
 }
-else if (count < 4 && (sixResult > fourteenResult && sevenResult > thirteenResult)) {
-    console.log ("wow, you really won!")
-    alert (" Spectacular win!")
+else if (count <= 4 && (sixResult > fourteenResult && sevenResult > thirteenResult)) {
+    console.log ("wow, you really won!");
+    alert (" Spectacular win!");
+    alert("Time to look for More people");
+}
+else if (count >= 4 && (sixResult > fourteenResult && sevenResult > thirteenResult)) {
+    console.log ("wow, you really won!");
+    alert (" Spectacular win!");
     alert("Time to look for More people")
 }
 }
