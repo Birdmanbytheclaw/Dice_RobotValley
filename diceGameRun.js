@@ -8,6 +8,8 @@ let speedTwo = 12;
 let cunningOne = 20; 
 let cunningTwo = 20;
 
+let count = 0;
+
 // function playerCharStats() {
 //     alert("your eyes open");
 //     alert("The world is far different from the last time you were awake.");
@@ -32,7 +34,7 @@ return result;
 
 
 //thisIsThePlayer
-//strength roll
+// Your strength roll
 
 function strengthRoll(rollOne, rollTwo, rollThree){
     let result = (rollOne + rollTwo + rollThree);
@@ -47,8 +49,48 @@ alert ("Strength roll Three is.. " + threeResult);
 
 console.log("your Strength is")
 console.log(strengthRoll(oneResult, twoResult, threeResult));
+//robotStrength
+function roboRoll(rollOne, rollTwo, rollThree){
+    let result = (rollOne + rollTwo + rollThree);
+    return result;
+}
+let eightResult = (rollDie(strengthOne));
+alert ("Their Strength roll One is.. " + eightResult);
+let nineResult = (rollDie(strengthTwo));
+alert ("Their Strength roll Two is.. " + nineResult);
+let tenResult = (rollDie(strengthThree));
+alert ("Their Strength roll Three is.. " + tenResult);
 
-//Speed roll
+console.log("Their Strength is")
+console.log(roboRoll(eightResult, nineResult, tenResult));
+
+//Win/Loss
+if (oneResult > eightResult){
+    console.log ("first Roll Win");
+    count++;
+    alert ("Your Arms Are Wicked Strong")
+}else{
+    console.log ("First Roll Loss");
+    alert ("Your arms Broke")
+}
+if (twoResult > nineResult){
+    console.log ("Second Roll Win");
+    count++
+    alert ("Your Core is Over 9000")
+}else{
+    console.log ("Second Roll Loss");
+    alert ("you took a Falcon Kick to the chest and your ribs Shattered")
+}
+if (threeResult > tenResult){
+    console.log ("Third Roll Win");
+    count++
+    alert ("tis but a flesh wound, but you come back with the spinning kick")
+}else{
+    console.log ("Third Roll Loss");
+    alert ("The flesh wound Bled out")
+}
+
+//Your Speed roll
 function speedRoll(rollOne, rollTwo){
     let result = (rollOne + rollTwo);
     return result;
@@ -61,8 +103,38 @@ alert ("Speed roll Two is.. " + fiveResult);
 
 console.log("your Speed is..")
 console.log(speedRoll(fourResult, fiveResult));
+//Robot Speed Roll
+function roboSpeed(rollOne, rollTwo){
+    let result = (rollOne + rollTwo);
+    return result;
+}
+let elevenResult = (rollDie(speedOne));
+alert ("Their Speed roll One is.. " + elevenResult);
+let twelveResult = (rollDie(speedTwo));
+alert ("Their Speed roll Two is.. " + twelveResult);
 
-//cunning roll
+
+console.log("Their your Speed is..")
+console.log(roboSpeed(elevenResult, twelveResult));
+//Win/Loss
+if (fourResult > elevenResult){
+    console.log ("Fourth Roll Win");
+    count++
+    alert ("you dodge a right hook as if it swung through honey")
+}else{
+    console.log ("Fourth Roll Loss");
+    alert ("you tripped over your own mother's ghost")
+}
+if (fiveResult > twelveResult){
+    console.log ("Fifth Roll Win");
+    count++
+    alert ("you broke the sound barrier just by juking it's grab")
+}else{
+    console.log ("Fifth Roll Loss");
+    alert ("you seem to be frozen in place")
+}
+
+// Your cunning roll
 let sixResult = (rollDie(cunningOne));
 alert ("Left Brain roll is.. " + sixResult);
 let sevenResult = (rollDie(cunningTwo));
@@ -72,21 +144,42 @@ alert ("Right Brain roll is.. " + sevenResult);
 console.log("your Left and Right Brain Scores are..")
 console.log(sixResult);
 console.log(sevenResult);
+//Robot cunning roll
+let thirteenResult = (rollDie(cunningOne));
+alert ("Their Left Brain roll is.. " + thirteenResult);
+let fourteenResult = (rollDie(cunningTwo));
+alert ("Their Right Brain roll is.. " + fourteenResult);
 
 
-//    if (strengthRoll < roboRoll){
-//        alert ("it is stronger")
-//     }else if(strengthRoll = roboRoll){
-//         alert("your strength is even")
-//    }else{
-//        alert("you are stronger")
-   
-//         }
+console.log("Their Left and Right Brain Scores are..")
+console.log(thirteenResult);
+console.log(fourteenResult);
 
-//     if(roboSpeed > speedRoll){
-//         alert ("it is Faster")
-//     }else if (roboSpeed = speedRoll){
-//             alert("You are the same Speed")
-//     }else {
-//         alert("You are faster")
-//     }
+if (sixResult > fourteenResult){
+    console.log ("Sixth Roll Win") ;
+    count++
+    alert ("your left Brain overtook it's right Brain")
+}else{
+    console.log  ("Sixth Roll Loss");
+    alert ("it's Right Brain Destroyed your Left Brain")
+}
+if (sevenResult > thirteenResult){
+    console.log  ("Seventh Roll Win");
+    count++
+    alert ("your Right Brain overtook it's Left Brain")
+}else{
+    console.log ("Seventh Roll Loss");
+    alert ("it's left Brain Destroyed your Right Brain")
+}
+if (count >= 4){
+    console.log ("You won")
+    alert ("Very Normal Win")
+}
+else if (count < 4) { 
+    console.log ("You Lost")
+    alert ("you Lost")
+}
+else if (count === 0) {
+    console.log ("wow, you really lost")
+    alert ("Spectacular loss")
+}
