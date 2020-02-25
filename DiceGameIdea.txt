@@ -1,4 +1,4 @@
-Name of the Game is Valley of the Bots
+Name of the Game is Robot Valley
 
 Every one you come across is a robot trying to fight you.
 you are also a robot
@@ -8,10 +8,18 @@ The Game Consists of
 
 one physical player robot and one nonplayer robot
 three characteristics
-        Strength- rolled on a singular d20
-        Speed- rolled on a singular d8
-        Cunning- rolled on two d20's (adding the Values together)
-
+Round 1
+        Strength- rolled on a d4, d6, and a d10
+        Speed- rolled on a d8 and a d12
+        Cunning- rolled on two d20's 
+Round 2
+	Strength - if won last round + 1 on each dice to ammont of sides
+	Speed - Same as strength
+	Cunning - given the chance to Roll extra times for every rolll win (can accumulate)
+Final rounds
+	Strength - If ability to roll higher than the round number you may roll otherwise you must outsmart or die
+	Speed - Same as strength
+	Cunning - if you havent used a single reroll/ have more rerolls than the level number you can roll all and add together to win 
 Each round Consists of 2 initial Waves of Rolling
 one for each characteristic (the 2 d20s for cunning will count as one)(there is a reson for 2 seperate rolls)and each side
 *yes you roll for each characteristic every round*
